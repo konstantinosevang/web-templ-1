@@ -1,0 +1,72 @@
+.footer {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.logo {
+    max-width: 2000px; /* Increased size for the logo */
+}
+
+.brand-description {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.footer-section h4 {
+    color: #A83232;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social-icons svg {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+.partner-logo {
+    max-width: 200px;
+    margin-top: 20px;
+}

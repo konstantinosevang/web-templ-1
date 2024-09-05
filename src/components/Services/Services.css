@@ -1,0 +1,111 @@
+/* Import the desired font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Ensure consistent font use */
+}
+
+.services {
+  padding: 60px 20px;
+  background-color: #ffffff; /* Main background color */
+  border-top: 1px solid #e0e0e0; /* Soft divider line */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif; /* Ensure consistent font use */
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-card {
+  background: #f9f9f9; /* Softer background for contrast */
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  flex: 1 1 calc(45% - 40px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card.expanded {
+  background-color: #f1f1f1; /* Slightly different background on expand */
+}
+
+.service-icon {
+  font-size: 3rem; /* Standardize icon size */
+  margin-bottom: 15px;
+  color: #A83232; /* Red color from the uploaded image */
+}
+
+.service-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-description {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.service-details {
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #555;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 1 calc(100% - 40px); /* Full width on tablets */
+    max-width: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-title {
+    font-size: 2rem;
+  }
+
+  .service-title {
+    font-size: 1.5rem;
+  }
+
+  .service-description, .service-details {
+    font-size: 1rem;
+  }
+}

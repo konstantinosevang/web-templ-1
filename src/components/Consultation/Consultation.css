@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.consultation {
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.consultation-card {
+  max-width: 800px; /* Adjusted for wider layout */
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.consultation-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between the icons */
+  margin-bottom: 20px;
+}
+
+.consultation-icon {
+  font-size: 3rem;
+  color: #A83232;
+}
+
+.consultation-title {
+  font-size: 2.5rem;
+  color: #A83232; /* Consistent with theme */
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.consultation-subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.consultation-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #A83232;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.consultation-button:hover {
+  background-color: darkred;
+}
